@@ -2,10 +2,9 @@
 title: "About"
 ---
 
-# Course: DSCI 521 
-## Assignment: Milestone 1
+## Course: DSCI 521 
 ## Name: Barry Siu
 
 About me: My name is Barry and I just finished my Bachelors of Science in Biology here at UBC. I was born and raised in Vancouver, so I have been here basically all my life. I am hoping to get both foundational and technical data science skills from this program, and to allow me to utilize it within the context of biology (industry, research, etc.).
 
-Information: This milestone folder contains a data, document, and screenshots folder.
+

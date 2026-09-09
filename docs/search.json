@@ -10,8 +10,8 @@
     "objectID": "about.html#name-barry-siu",
     "href": "about.html#name-barry-siu",
     "title": "About",
-    "section": "",
-    "text": "About me: My name is Barry and I just finished my Bachelors of Science in Biology here at UBC. I was born and raised in Vancouver, so I have been here basically all my life. I am hoping to get both foundational and technical data science skills from this program, and to allow me to utilize it within the context of biology (industry, research, etc.).\nInformation: This milestone folder contains a data, document, and screenshots folder."
+    "section": "Name: Barry Siu",
+    "text": "Name: Barry Siu\nAbout me: My name is Barry and I just finished my Bachelors of Science in Biology here at UBC. I was born and raised in Vancouver, so I have been here basically all my life. I am hoping to get both foundational and technical data science skills from this program, and to allow me to utilize it within the context of biology (industry, research, etc.)."
   },
   {
     "objectID": "index.html",
@@ -19,5 +19,12 @@
     "title": "Barry",
     "section": "",
     "text": "About me: My name is Barry and I just finished my Bachelors of Science in Biology here at UBC. I was born and raised in Vancouver, so I have been here basically all my life. I am hoping to get both foundational and technical data science skills from this program, and to allow me to utilize it within the context of biology (industry, research, etc.)."
+  },
+  {
+    "objectID": "posts/first-weeks/index.html",
+    "href": "posts/first-weeks/index.html",
+    "title": "My first weeks in MDS",
+    "section": "",
+    "text": "Orientation day on campus."
   }
 ]
