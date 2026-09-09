@@ -1,7 +1,8 @@
 ---
-title: "Barry's Website"
+title: "Barry"
 ---
 
-This is a Quarto website.
+![](images/barrysiu_ubc_card_img.jpeg){width=250px}
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+About me: My name is Barry and I just finished my Bachelors of Science in Biology here at UBC. I was born and raised in Vancouver, so I have been here basically all my life. I am hoping to get both foundational and technical data science skills from this program, and to allow me to utilize it within the context of biology (industry, research, etc.).
+
