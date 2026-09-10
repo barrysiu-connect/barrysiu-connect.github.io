@@ -2,9 +2,16 @@
 title: "About"
 ---
 
-## Course: DSCI 521 
-## Name: Barry Siu
+## Background
+I grew up here in Vancouver, Canada. I studied Biology at the University of British Columbia for undergraduate degree. Before entering MDS I mostly conducted multiple sclerosis research, this involved animal care, tissue staining, and microscopic imaging. A portion of my work also involved processing imaging and cell data, and finding ways to present or visualize the data.
 
-About me: My name is Barry and I just finished my Bachelors of Science in Biology here at UBC. I was born and raised in Vancouver, so I have been here basically all my life. I am hoping to get both foundational and technical data science skills from this program, and to allow me to utilize it within the context of biology (industry, research, etc.).
+## Why data science
+
+Due to my background in more wet-lab research for most of my undergrad, I wanted to obtain a more dry-lab skillset. I also observed that a lot of scientific research involves a lot of data (often messy too) however many labs lack a resident data scientist to turn to. Because of this gap, I decided it would be useful for me to have a data science background and skillset if I wanted to continue working in the context of biology whether it be industry and academia. 
+
+## Outside of data science
+
+When I am not working or on campus I like to hit up the gym with my friends or go out to eat! UBC's Recreation North fitness centre provides a great place to workout due to large number of machines they now have. Outside of excercise I like to go out to eat and try new places around Vancouver with my friends. Other hobbies I am interested in include origami and a little bit of gaming (Overcooked 2!). 
+
 
 
