@@ -4,7 +4,7 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "My first weeks in MDS\n\n\n\n\n\n\n\n\nSep 10, 2026\n\n\nBarry Siu\n\n\n\n\n\nNo matching items"
+    "text": "Analysis in R\n\n\n\n\n\n\n\n\nSep 23, 2026\n\n\nBarry Siu\n\n\n\n\n\n\n\n\n\n\n\n\nAnalysis in Python\n\n\n\n\n\n\n\n\nSep 23, 2026\n\n\nBarry Siu\n\n\n\n\n\n\n\n\n\n\n\n\nMy first weeks in MDS\n\n\n\n\n\n\n\n\nSep 10, 2026\n\n\nBarry Siu\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -14,11 +14,25 @@
     "text": "My name is Barry and I just finished my Bachelors of Science in Biology from the University of British Columbia. I was born and raised in Vancouver, so I have been here basically all my life. Prior to entering UBC’s Master of Data Science program I worked as a research assistant in an immunology lab that investigated the relationship between Epstein-Barr virus and multiple sclerosis. I am hoping to gain both foundational and technical data science skills from UBC’s Master of Data Science, allowing me to expand my data science toolkit within the context of immunology. I look forward to meeting new people and learning as much as I can in the coming year!"
   },
   {
+    "objectID": "posts/r-analysis/analysis.html",
+    "href": "posts/r-analysis/analysis.html",
+    "title": "Analysis in R",
+    "section": "",
+    "text": "Running Analysis in R\n\nlibrary(tidyverse)\nlibrary(palmerpenguins)\n\nRunning R Code\n\npenguin_data &lt;- penguins\n\npenguin_data\n\n# A tibble: 344 × 8\n   species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n   &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n 1 Adelie  Torgersen           39.1          18.7               181        3750\n 2 Adelie  Torgersen           39.5          17.4               186        3800\n 3 Adelie  Torgersen           40.3          18                 195        3250\n 4 Adelie  Torgersen           NA            NA                  NA          NA\n 5 Adelie  Torgersen           36.7          19.3               193        3450\n 6 Adelie  Torgersen           39.3          20.6               190        3650\n 7 Adelie  Torgersen           38.9          17.8               181        3625\n 8 Adelie  Torgersen           39.2          19.6               195        4675\n 9 Adelie  Torgersen           34.1          18.1               193        3475\n10 Adelie  Torgersen           42            20.2               190        4250\n# ℹ 334 more rows\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;"
+  },
+  {
     "objectID": "posts/first-weeks/index.html",
     "href": "posts/first-weeks/index.html",
     "title": "My first weeks in MDS",
     "section": "",
     "text": "My first week’s in MDS have been great! During orientation I met so many people from so many different backgrounds in both academia and industry. One of the most fun parts of orientation was the campus scavenger hunt, where we got to split into teams to complete challenges. We got to tour all parts of campus, and we even got a little prize at the end (refer to image below)!\nIn my first week of official MDS classes, I learned so much in such a short time, from working in the terminal, R, python, and positron to understanding statistics and probabilities. Overall the days were long, but I was able to get all my homework done before the weekend which gave me some time to rest.\nAs I am entering pre-quiz week I am starting to feel a bit of the pressure but overall it has been a great few weeks, I was able to meet many people and make many friends from everywhere in the world!\n\n\n\nOrientation day on campus."
+  },
+  {
+    "objectID": "posts/python-analysis/python.html",
+    "href": "posts/python-analysis/python.html",
+    "title": "Analysis in Python",
+    "section": "",
+    "text": "Running Analysis in Python\n\nfrom palmerpenguins import load_penguins\n\npenguins = load_penguins()\n\npenguins.head()\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\n0\nAdelie\nTorgersen\n39.1\n18.7\n181.0\n3750.0\nmale\n2007\n\n\n1\nAdelie\nTorgersen\n39.5\n17.4\n186.0\n3800.0\nfemale\n2007\n\n\n2\nAdelie\nTorgersen\n40.3\n18.0\n195.0\n3250.0\nfemale\n2007\n\n\n3\nAdelie\nTorgersen\nNaN\nNaN\nNaN\nNaN\nNaN\n2007\n\n\n4\nAdelie\nTorgersen\n36.7\n19.3\n193.0\n3450.0\nfemale\n2007"
   },
   {
     "objectID": "about.html",
