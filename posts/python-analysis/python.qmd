@@ -3,14 +3,28 @@ title: "Analysis in Python"
 author: "Barry Siu"
 date: 2026-09-23
 ---
-Running Analysis in Python
 
+## Running Analysis in Python
 ```{python}
 from palmerpenguins import load_penguins
-
-penguins = load_penguins()
-
-penguins.head()
-
-
+import matplotlib.pyplot as plt
+import numpy as np
 ```
+```{python}
+penguins = load_penguins()
+penguins.head()
+```
+
+```{python}
+penguins.groupby("sex")[["body_mass_g"]].mean()
+```
+
+```{python}
+plt.scatter(penguins["bill_length_mm"], penguins["body_mass_g"])
+plt.xlabel("Bill Length (mm)")
+plt.ylabel("Body Mass (g)")
+```
+
+## Conclusions
+
+I loaded in the palmerpenguins dataset and first displayed the data frame as as a tabke. Afterwards I grouped the mean body mass by sex, which showed that the male penguins have a higher mean body mass. The last graph shows the scatter plot of bill length and body mass. The graph shows a positive trend between bill length and body mass.

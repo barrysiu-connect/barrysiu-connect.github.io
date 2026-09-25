@@ -14,13 +14,6 @@
     "text": "My name is Barry and I just finished my Bachelors of Science in Biology from the University of British Columbia. I was born and raised in Vancouver, so I have been here basically all my life. Prior to entering UBC’s Master of Data Science program I worked as a research assistant in an immunology lab that investigated the relationship between Epstein-Barr virus and multiple sclerosis. I am hoping to gain both foundational and technical data science skills from UBC’s Master of Data Science, allowing me to expand my data science toolkit within the context of immunology. I look forward to meeting new people and learning as much as I can in the coming year!"
   },
   {
-    "objectID": "posts/r-analysis/analysis.html",
-    "href": "posts/r-analysis/analysis.html",
-    "title": "Analysis in R",
-    "section": "",
-    "text": "Running Analysis in R\n\nlibrary(tidyverse)\nlibrary(palmerpenguins)\n\nRunning R Code\n\npenguin_data &lt;- penguins\n\npenguin_data\n\n# A tibble: 344 × 8\n   species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n   &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n 1 Adelie  Torgersen           39.1          18.7               181        3750\n 2 Adelie  Torgersen           39.5          17.4               186        3800\n 3 Adelie  Torgersen           40.3          18                 195        3250\n 4 Adelie  Torgersen           NA            NA                  NA          NA\n 5 Adelie  Torgersen           36.7          19.3               193        3450\n 6 Adelie  Torgersen           39.3          20.6               190        3650\n 7 Adelie  Torgersen           38.9          17.8               181        3625\n 8 Adelie  Torgersen           39.2          19.6               195        4675\n 9 Adelie  Torgersen           34.1          18.1               193        3475\n10 Adelie  Torgersen           42            20.2               190        4250\n# ℹ 334 more rows\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;"
-  },
-  {
     "objectID": "posts/first-weeks/index.html",
     "href": "posts/first-weeks/index.html",
     "title": "My first weeks in MDS",
@@ -28,11 +21,18 @@
     "text": "My first week’s in MDS have been great! During orientation I met so many people from so many different backgrounds in both academia and industry. One of the most fun parts of orientation was the campus scavenger hunt, where we got to split into teams to complete challenges. We got to tour all parts of campus, and we even got a little prize at the end (refer to image below)!\nIn my first week of official MDS classes, I learned so much in such a short time, from working in the terminal, R, python, and positron to understanding statistics and probabilities. Overall the days were long, but I was able to get all my homework done before the weekend which gave me some time to rest.\nAs I am entering pre-quiz week I am starting to feel a bit of the pressure but overall it has been a great few weeks, I was able to meet many people and make many friends from everywhere in the world!\n\n\n\nOrientation day on campus."
   },
   {
+    "objectID": "posts/r-analysis/analysis.html",
+    "href": "posts/r-analysis/analysis.html",
+    "title": "Analysis in R",
+    "section": "",
+    "text": "library(tidyverse)\nlibrary(ggplot2)\nlibrary(palmerpenguins)\n\n\nhead(penguins)\n\n# A tibble: 6 × 8\n  species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n  &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n1 Adelie  Torgersen           39.1          18.7               181        3750\n2 Adelie  Torgersen           39.5          17.4               186        3800\n3 Adelie  Torgersen           40.3          18                 195        3250\n4 Adelie  Torgersen           NA            NA                  NA          NA\n5 Adelie  Torgersen           36.7          19.3               193        3450\n6 Adelie  Torgersen           39.3          20.6               190        3650\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;\n\n\n\npenguin_data &lt;- penguins\npenguin_data |&gt; \n    group_by(species) |&gt; \n    summarise(\n    mean_mass = mean(body_mass_g, na.rm = TRUE)) |&gt; \n    ggplot(aes(x = species, y = mean_mass)) +\n    geom_col()\n\n\n\n\n\n\n\nFigure 1: Body mass of penguins by species.\n\n\n\n\n\n\nggplot(penguins, aes(x = flipper_length_mm, \n                     y = body_mass_g, \n                     color = species)) +\n  geom_point()"
+  },
+  {
     "objectID": "posts/python-analysis/python.html",
     "href": "posts/python-analysis/python.html",
     "title": "Analysis in Python",
     "section": "",
-    "text": "Running Analysis in Python\n\nfrom palmerpenguins import load_penguins\n\npenguins = load_penguins()\n\npenguins.head()\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\n0\nAdelie\nTorgersen\n39.1\n18.7\n181.0\n3750.0\nmale\n2007\n\n\n1\nAdelie\nTorgersen\n39.5\n17.4\n186.0\n3800.0\nfemale\n2007\n\n\n2\nAdelie\nTorgersen\n40.3\n18.0\n195.0\n3250.0\nfemale\n2007\n\n\n3\nAdelie\nTorgersen\nNaN\nNaN\nNaN\nNaN\nNaN\n2007\n\n\n4\nAdelie\nTorgersen\n36.7\n19.3\n193.0\n3450.0\nfemale\n2007"
+    "text": "from palmerpenguins import load_penguins\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n\npenguins = load_penguins()\npenguins.head()\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\n0\nAdelie\nTorgersen\n39.1\n18.7\n181.0\n3750.0\nmale\n2007\n\n\n1\nAdelie\nTorgersen\n39.5\n17.4\n186.0\n3800.0\nfemale\n2007\n\n\n2\nAdelie\nTorgersen\n40.3\n18.0\n195.0\n3250.0\nfemale\n2007\n\n\n3\nAdelie\nTorgersen\nNaN\nNaN\nNaN\nNaN\nNaN\n2007\n\n\n4\nAdelie\nTorgersen\n36.7\n19.3\n193.0\n3450.0\nfemale\n2007\n\n\n\n\n\n\n\n\npenguins.groupby(\"sex\")[[\"body_mass_g\"]].mean()\n\n\n\n\n\n\n\n\nbody_mass_g\n\n\nsex\n\n\n\n\n\nfemale\n3862.272727\n\n\nmale\n4545.684524\n\n\n\n\n\n\n\n\nplt.scatter(penguins[\"bill_length_mm\"], penguins[\"body_mass_g\"])\nplt.xlabel(\"Bill Length (mm)\")\nplt.ylabel(\"Body Mass (g)\")"
   },
   {
     "objectID": "about.html",
@@ -61,5 +61,33 @@
     "title": "About Me",
     "section": "Outside of data science",
     "text": "Outside of data science\nWhen I am not working or on campus I like to hit up the gym with my friends or go out to eat! UBC’s Recreation North fitness centre provides a great place to workout due to large number of machines they now have. Outside of excercise I like to go out to eat and try new places around Vancouver with my friends. Other hobbies I am interested in include origami and a little bit of gaming (Overcooked 2!)."
+  },
+  {
+    "objectID": "posts/r-analysis/analysis.html#conclusions",
+    "href": "posts/r-analysis/analysis.html#conclusions",
+    "title": "Analysis in R",
+    "section": "Conclusions",
+    "text": "Conclusions\nI loaded in the palmerpenguins dataset and first displayed the data frame as a tibble. Afterwards I plotted the mean mass of each species of penguins, which showed that Gentoo had the highest mean mass. For my last analysis I plotted body mass and flipper length on a scatter plot, which showed that Gentoo also had both the largest flipper length and body mass."
+  },
+  {
+    "objectID": "posts/r-analysis/analysis.html#running-analysis-in-r",
+    "href": "posts/r-analysis/analysis.html#running-analysis-in-r",
+    "title": "Analysis in R",
+    "section": "",
+    "text": "library(tidyverse)\nlibrary(ggplot2)\nlibrary(palmerpenguins)\n\n\nhead(penguins)\n\n# A tibble: 6 × 8\n  species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n  &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n1 Adelie  Torgersen           39.1          18.7               181        3750\n2 Adelie  Torgersen           39.5          17.4               186        3800\n3 Adelie  Torgersen           40.3          18                 195        3250\n4 Adelie  Torgersen           NA            NA                  NA          NA\n5 Adelie  Torgersen           36.7          19.3               193        3450\n6 Adelie  Torgersen           39.3          20.6               190        3650\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;\n\n\n\npenguin_data &lt;- penguins\npenguin_data |&gt; \n    group_by(species) |&gt; \n    summarise(\n    mean_mass = mean(body_mass_g, na.rm = TRUE)) |&gt; \n    ggplot(aes(x = species, y = mean_mass)) +\n    geom_col()\n\n\n\n\n\n\n\nFigure 1: Body mass of penguins by species.\n\n\n\n\n\n\nggplot(penguins, aes(x = flipper_length_mm, \n                     y = body_mass_g, \n                     color = species)) +\n  geom_point()"
+  },
+  {
+    "objectID": "posts/python-analysis/python.html#running-analysis-in-python",
+    "href": "posts/python-analysis/python.html#running-analysis-in-python",
+    "title": "Analysis in Python",
+    "section": "",
+    "text": "from palmerpenguins import load_penguins\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n\npenguins = load_penguins()\npenguins.head()\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\n0\nAdelie\nTorgersen\n39.1\n18.7\n181.0\n3750.0\nmale\n2007\n\n\n1\nAdelie\nTorgersen\n39.5\n17.4\n186.0\n3800.0\nfemale\n2007\n\n\n2\nAdelie\nTorgersen\n40.3\n18.0\n195.0\n3250.0\nfemale\n2007\n\n\n3\nAdelie\nTorgersen\nNaN\nNaN\nNaN\nNaN\nNaN\n2007\n\n\n4\nAdelie\nTorgersen\n36.7\n19.3\n193.0\n3450.0\nfemale\n2007\n\n\n\n\n\n\n\n\npenguins.groupby(\"sex\")[[\"body_mass_g\"]].mean()\n\n\n\n\n\n\n\n\nbody_mass_g\n\n\nsex\n\n\n\n\n\nfemale\n3862.272727\n\n\nmale\n4545.684524\n\n\n\n\n\n\n\n\nplt.scatter(penguins[\"bill_length_mm\"], penguins[\"body_mass_g\"])\nplt.xlabel(\"Bill Length (mm)\")\nplt.ylabel(\"Body Mass (g)\")"
+  },
+  {
+    "objectID": "posts/python-analysis/python.html#conclusions",
+    "href": "posts/python-analysis/python.html#conclusions",
+    "title": "Analysis in Python",
+    "section": "Conclusions",
+    "text": "Conclusions\nI loaded in the palmerpenguins dataset and first displayed the data frame as as a tabke. Afterwards I grouped the mean body mass by sex, which showed that the male penguins have a higher mean body mass. The last graph shows the scatter plot of bill length and body mass. The graph shows a positive trend between bill length and body mass."
   }
 ]
