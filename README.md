@@ -1,5 +1,5 @@
 ## About this repository
-This repository hosts my website, which includes a section about me, my blog posts, and my analyses in both R and python. 
+This repository hosts my website, which includes a section about me, my blog posts, and my analyses in both R and Python. 
 
 ## Required Installations
 Quarto version 1.10.18
@@ -12,12 +12,12 @@ R version 4.6.1
 Input the following steps within your terminal
 ### 1. Clone repository
 ```{bash}
-git clone git@github.com:barrysiu-connect/barrysiu-connect.github.io.git
+git clone https://github.com/barrysiu-connect/barrysiu-connect.github.io.git
 ```
 
 ### 2. Change directory to folder
 ```{bash}
-cd barrysiu-connect.github.io.git 
+cd barrysiu-connect.github.io 
 ```
 
 ### 3. Sync Python virtual environmenmt
@@ -35,12 +35,17 @@ R
 renv::restore()
 ```
 
+### 4.3. Exit R
+```{bash}
+q()
+```
+
 ### 5. Render Quarto website
 ```{bash}
 uv run quarto render
 ```
 
-### 6. Launch and preview Quarto website
+### 6. Launch and preview Quarto website locally
 ```{bash}
 uv run quarto preview
 ```
