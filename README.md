@@ -1,4 +1,4 @@
-#### About this repository
+## About this repository
 This repository hosts my website, which includes a section about me, my blog posts, and my analyses in both R and python. 
 
 ## Required Installations
