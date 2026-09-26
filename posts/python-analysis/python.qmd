@@ -32,3 +32,6 @@ plt.ylabel("Body Mass (g)")
 ## Conclusions
 
 I loaded in the palmerpenguins dataset and first displayed the data frame as a table. Afterwards I grouped the mean body mass by sex, which showed that the male penguins have a higher mean body mass. The last graph shows the scatter plot of bill length and body mass. The graph shows a positive trend between bill length and body mass.
+
+## Data Citation
+Horst AM, Hill AP, Gorman KB (2020). palmerpenguins: Palmer Archipelago (Antarctica) penguin data. R package version 0.1.0. https://allisonhorst.github.io/palmerpenguins/. doi: 10.5281/zenodo.3960218.

@@ -29,8 +29,6 @@ penguin_data |>
 ```
 
 ```{r}
-#| message: false
-#| warning: false
 #| fig-cap: " Figure 2: Body mass compared to flipper length of penguins"
 ggplot(penguins, aes(x = flipper_length_mm, 
                      y = body_mass_g, 
@@ -41,3 +39,6 @@ ggplot(penguins, aes(x = flipper_length_mm,
 ## Conclusions
 
 I loaded in the palmerpenguins dataset and first displayed the data frame as a tibble. Afterwards I plotted the mean mass of each species of penguins, which showed that Gentoo had the highest mean mass. For my last analysis I plotted body mass and flipper length on a scatter plot, which showed that Gentoo also had both the largest flipper length and body mass.
+
+## Data Citation
+Horst AM, Hill AP, Gorman KB (2020). palmerpenguins: Palmer Archipelago (Antarctica) penguin data. R package version 0.1.0. https://allisonhorst.github.io/palmerpenguins/. doi: 10.5281/zenodo.3960218.

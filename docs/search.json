@@ -25,14 +25,14 @@
     "href": "posts/r-analysis/analysis.html",
     "title": "Analysis in R",
     "section": "",
-    "text": "library(tidyverse)\nlibrary(ggplot2)\nlibrary(palmerpenguins)\n\n\nhead(penguins)\n\n# A tibble: 6 × 8\n  species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n  &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n1 Adelie  Torgersen           39.1          18.7               181        3750\n2 Adelie  Torgersen           39.5          17.4               186        3800\n3 Adelie  Torgersen           40.3          18                 195        3250\n4 Adelie  Torgersen           NA            NA                  NA          NA\n5 Adelie  Torgersen           36.7          19.3               193        3450\n6 Adelie  Torgersen           39.3          20.6               190        3650\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;\n\n\n\npenguin_data &lt;- penguins\npenguin_data |&gt; \n    group_by(species) |&gt; \n    summarise(\n    mean_mass = mean(body_mass_g, na.rm = TRUE)) |&gt; \n    ggplot(aes(x = species, y = mean_mass)) +\n    geom_col()\n\n\n\n\nFigure 1: Body mass of penguins by species.\n\n\n\n\n\nggplot(penguins, aes(x = flipper_length_mm, \n                     y = body_mass_g, \n                     color = species)) +\n  geom_point()\n\n\n\n\nFigure 2: Body mass compared to flipper length of penguins"
+    "text": "library(tidyverse)\nlibrary(ggplot2)\nlibrary(palmerpenguins)\n\n\nhead(penguins)\n\n# A tibble: 6 × 8\n  species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n  &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n1 Adelie  Torgersen           39.1          18.7               181        3750\n2 Adelie  Torgersen           39.5          17.4               186        3800\n3 Adelie  Torgersen           40.3          18                 195        3250\n4 Adelie  Torgersen           NA            NA                  NA          NA\n5 Adelie  Torgersen           36.7          19.3               193        3450\n6 Adelie  Torgersen           39.3          20.6               190        3650\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;\n\n\n\npenguin_data &lt;- penguins\npenguin_data |&gt; \n    group_by(species) |&gt; \n    summarise(\n    mean_mass = mean(body_mass_g, na.rm = TRUE)) |&gt; \n    ggplot(aes(x = species, y = mean_mass)) +\n    geom_col()\n\n\n\n\nFigure 1: Body mass of penguins by species.\n\n\n\n\n\nggplot(penguins, aes(x = flipper_length_mm, \n                     y = body_mass_g, \n                     color = species)) +\n  geom_point()\n\nWarning: Removed 2 rows containing missing values or values outside the scale range\n(`geom_point()`).\n\n\n\n\n\nFigure 2: Body mass compared to flipper length of penguins"
   },
   {
     "objectID": "posts/r-analysis/analysis.html#running-analysis-in-r",
     "href": "posts/r-analysis/analysis.html#running-analysis-in-r",
     "title": "Analysis in R",
     "section": "",
-    "text": "library(tidyverse)\nlibrary(ggplot2)\nlibrary(palmerpenguins)\n\n\nhead(penguins)\n\n# A tibble: 6 × 8\n  species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n  &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n1 Adelie  Torgersen           39.1          18.7               181        3750\n2 Adelie  Torgersen           39.5          17.4               186        3800\n3 Adelie  Torgersen           40.3          18                 195        3250\n4 Adelie  Torgersen           NA            NA                  NA          NA\n5 Adelie  Torgersen           36.7          19.3               193        3450\n6 Adelie  Torgersen           39.3          20.6               190        3650\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;\n\n\n\npenguin_data &lt;- penguins\npenguin_data |&gt; \n    group_by(species) |&gt; \n    summarise(\n    mean_mass = mean(body_mass_g, na.rm = TRUE)) |&gt; \n    ggplot(aes(x = species, y = mean_mass)) +\n    geom_col()\n\n\n\n\nFigure 1: Body mass of penguins by species.\n\n\n\n\n\nggplot(penguins, aes(x = flipper_length_mm, \n                     y = body_mass_g, \n                     color = species)) +\n  geom_point()\n\n\n\n\nFigure 2: Body mass compared to flipper length of penguins"
+    "text": "library(tidyverse)\nlibrary(ggplot2)\nlibrary(palmerpenguins)\n\n\nhead(penguins)\n\n# A tibble: 6 × 8\n  species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n  &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n1 Adelie  Torgersen           39.1          18.7               181        3750\n2 Adelie  Torgersen           39.5          17.4               186        3800\n3 Adelie  Torgersen           40.3          18                 195        3250\n4 Adelie  Torgersen           NA            NA                  NA          NA\n5 Adelie  Torgersen           36.7          19.3               193        3450\n6 Adelie  Torgersen           39.3          20.6               190        3650\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;\n\n\n\npenguin_data &lt;- penguins\npenguin_data |&gt; \n    group_by(species) |&gt; \n    summarise(\n    mean_mass = mean(body_mass_g, na.rm = TRUE)) |&gt; \n    ggplot(aes(x = species, y = mean_mass)) +\n    geom_col()\n\n\n\n\nFigure 1: Body mass of penguins by species.\n\n\n\n\n\nggplot(penguins, aes(x = flipper_length_mm, \n                     y = body_mass_g, \n                     color = species)) +\n  geom_point()\n\nWarning: Removed 2 rows containing missing values or values outside the scale range\n(`geom_point()`).\n\n\n\n\n\nFigure 2: Body mass compared to flipper length of penguins"
   },
   {
     "objectID": "posts/r-analysis/analysis.html#conclusions",
@@ -40,6 +40,13 @@
     "title": "Analysis in R",
     "section": "Conclusions",
     "text": "Conclusions\nI loaded in the palmerpenguins dataset and first displayed the data frame as a tibble. Afterwards I plotted the mean mass of each species of penguins, which showed that Gentoo had the highest mean mass. For my last analysis I plotted body mass and flipper length on a scatter plot, which showed that Gentoo also had both the largest flipper length and body mass."
+  },
+  {
+    "objectID": "posts/r-analysis/analysis.html#data-citation",
+    "href": "posts/r-analysis/analysis.html#data-citation",
+    "title": "Analysis in R",
+    "section": "Data Citation",
+    "text": "Data Citation\nHorst AM, Hill AP, Gorman KB (2020). palmerpenguins: Palmer Archipelago (Antarctica) penguin data. R package version 0.1.0. https://allisonhorst.github.io/palmerpenguins/. doi: 10.5281/zenodo.3960218."
   },
   {
     "objectID": "posts/python-analysis/python.html",
@@ -61,6 +68,13 @@
     "title": "Analysis in Python",
     "section": "Conclusions",
     "text": "Conclusions\nI loaded in the palmerpenguins dataset and first displayed the data frame as a table. Afterwards I grouped the mean body mass by sex, which showed that the male penguins have a higher mean body mass. The last graph shows the scatter plot of bill length and body mass. The graph shows a positive trend between bill length and body mass."
+  },
+  {
+    "objectID": "posts/python-analysis/python.html#data-citation",
+    "href": "posts/python-analysis/python.html#data-citation",
+    "title": "Analysis in Python",
+    "section": "Data Citation",
+    "text": "Data Citation\nHorst AM, Hill AP, Gorman KB (2020). palmerpenguins: Palmer Archipelago (Antarctica) penguin data. R package version 0.1.0. https://allisonhorst.github.io/palmerpenguins/. doi: 10.5281/zenodo.3960218."
   },
   {
     "objectID": "about.html",
