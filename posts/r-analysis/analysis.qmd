@@ -18,8 +18,7 @@ head(penguins)
 ```
 
 ```{r}
-#| label: fig-penguin-mass
-#| fig-cap: "Body mass of penguins by species."
+#| fig-cap: "Figure 1: Body mass of penguins by species."
 penguin_data <- penguins
 penguin_data |> 
     group_by(species) |> 
@@ -32,6 +31,7 @@ penguin_data |>
 ```{r}
 #| message: false
 #| warning: false
+#| fig-cap: " Figure 2: Body mass compared to flipper length of penguins"
 ggplot(penguins, aes(x = flipper_length_mm, 
                      y = body_mass_g, 
                      color = species)) +
