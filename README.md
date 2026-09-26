@@ -10,37 +10,37 @@ R version 4.6.1
 
 ## Instructions
 Input the following steps within your terminal
-# 1. Clone repository
+### 1. Clone repository
 ```{bash}
 git clone git@github.com:barrysiu-connect/barrysiu-connect.github.io.git
 ```
 
-# 2. Change directory to folder
+### 2. Change directory to folder
 ```{bash}
 cd barrysiu-connect.github.io.git 
 ```
 
-# 3. Sync Python virtual environmenmt
+### 3. Sync Python virtual environmenmt
 ```{bash}
 uv sync
 ```
 
-# 4.1. Load R 
+### 4.1. Load R 
 ```{bash}
 R
 ```
 
-# 4.2. Load R virtual environment (in R)
+### 4.2. Load R virtual environment (in R)
 ```{bash}
 renv::restore()
 ```
 
-# 5. Render Quarto website
+### 5. Render Quarto website
 ```{bash}
 uv run quarto render
 ```
 
-# 6. Launch and preview Quarto website
+### 6. Launch and preview Quarto website
 ```{bash}
 uv run quarto preview
 ```
